@@ -33,11 +33,6 @@ export const navigationLinks: NavigationLink[] = [
   { label: "Contact", href: "/contact" },
 ];
 
-export const homeHighlights = [
-  "Vocal and instrumental collaboration",
-  "Recital, audition, and competition preparation",
-  "Chamber music and special event performances",
-];
 
 export const repertoireSections: RepertoireSection[] = [
   {

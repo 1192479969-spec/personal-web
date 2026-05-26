@@ -1,6 +1,7 @@
 import Link from "next/link";
 
-import { contactMethods, navigationLinks, siteIdentity } from "@/data/site";
+import { contactMethods } from "@/data/contact";
+import { navigationLinks, siteIdentity } from "@/data/site";
 
 export function Footer() {
   return (

@@ -6,7 +6,9 @@ import { heroContent } from "@/data/home";
 export function Hero() {
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-gallery-black px-6 py-28 text-center text-gallery-white">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(138,111,61,0.32),transparent_34%),linear-gradient(135deg,#050505_0%,#202020_45%,#0f0f0f_100%)]" />
+      <div className="gallery-media-frame absolute inset-0" aria-hidden="true">
+        <div className="h-full w-full bg-[radial-gradient(circle_at_top_left,rgba(138,111,61,0.32),transparent_34%),linear-gradient(135deg,#050505_0%,#202020_45%,#0f0f0f_100%)]" />
+      </div>
       <div className="absolute inset-0 bg-gallery-black/55" aria-hidden="true" />
       <div className="absolute inset-x-8 top-24 h-px bg-gallery-white/15" aria-hidden="true" />
       <div className="absolute inset-x-8 bottom-24 h-px bg-gallery-white/10" aria-hidden="true" />

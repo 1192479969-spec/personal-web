@@ -42,6 +42,17 @@ a {
   text-decoration: none;
 }
 
+.gallery-media-frame {
+  overflow: hidden;
+}
+
+.gallery-media-frame :is(img, video) {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 ::selection {
   background: #efe7d3;
   color: #050505;

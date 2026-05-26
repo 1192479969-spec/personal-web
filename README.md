@@ -25,7 +25,10 @@ Place files in the following locations:
     │   └── page.tsx
     ├── components
     │   ├── AboutSection.tsx
+    │   ├── BookingGuide.tsx
+    │   ├── ContactCard.tsx
     │   ├── Hero.tsx
+    │   ├── MediaGrid.tsx
     │   ├── RepertoireList.tsx
     │   ├── ServicesOverview.tsx
     │   └── layout
@@ -33,7 +36,9 @@ Place files in the following locations:
     │       └── Navbar.tsx
     └── data
         ├── about.ts
+        ├── contact.ts
         ├── home.ts
+        ├── media.ts
         ├── repertoire.json
         └── site.ts
 ```
@@ -67,9 +72,12 @@ The App Router pages are:
   `src/data/about.ts`.
 - Repertoire display lives in `src/components/RepertoireList.tsx`, with
   maintainable work entries in `src/data/repertoire.json`.
+- Media video placeholders live in `src/components/MediaGrid.tsx`, with embed
+  metadata in `src/data/media.ts`.
+- Contact conversion sections live in `src/components/ContactCard.tsx` and
+  `src/components/BookingGuide.tsx`, with inquiry data in `src/data/contact.ts`.
 - Home-specific copy and services data live in `src/data/home.ts`.
-- Navigation, business identity, media placeholders, and contact data live in
-  `src/data/site.ts`.
+- Navigation and business identity live in `src/data/site.ts`.
 - Route files compose UI from the data module instead of hard-coding repeated
   site-wide values in multiple places.
 

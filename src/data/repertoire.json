@@ -1,0 +1,45 @@
+{
+  "_README": "To add repertoire, copy one object inside the pieces array and update category, composer, title, key, catalog, and nickname. Use an empty string or omit key, catalog, or nickname when that detail does not apply. Keep commas between objects and keep all text inside double quotes.",
+  "pieces": [
+    {
+      "category": "Vocal",
+      "composer": "Franz Schubert",
+      "title": "Gretchen am Spinnrade",
+      "key": "in D minor",
+      "catalog": "D. 118",
+      "nickname": ""
+    },
+    {
+      "category": "Strings",
+      "composer": "Ludwig van Beethoven",
+      "title": "Violin Sonata No. 9",
+      "key": "in A major",
+      "catalog": "Op. 47",
+      "nickname": "Kreutzer"
+    },
+    {
+      "category": "Winds",
+      "composer": "Francis Poulenc",
+      "title": "Flute Sonata",
+      "key": "",
+      "catalog": "FP 164",
+      "nickname": ""
+    },
+    {
+      "category": "Chamber",
+      "composer": "Johannes Brahms",
+      "title": "Piano Trio No. 1",
+      "key": "in B major",
+      "catalog": "Op. 8",
+      "nickname": ""
+    },
+    {
+      "category": "Strings",
+      "composer": "Cesar Franck",
+      "title": "Violin Sonata",
+      "key": "in A major",
+      "catalog": "",
+      "nickname": ""
+    }
+  ]
+}

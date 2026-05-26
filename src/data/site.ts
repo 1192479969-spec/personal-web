@@ -3,11 +3,6 @@ export type NavigationLink = {
   href: string;
 };
 
-export type RepertoireSection = {
-  title: string;
-  items: string[];
-};
-
 export type MediaItem = {
   title: string;
   description: string;
@@ -31,22 +26,6 @@ export const navigationLinks: NavigationLink[] = [
   { label: "Repertoire", href: "/repertoire" },
   { label: "Media", href: "/media" },
   { label: "Contact", href: "/contact" },
-];
-
-
-export const repertoireSections: RepertoireSection[] = [
-  {
-    title: "Vocal Collaboration",
-    items: ["Art song", "Opera arias", "Musical theatre selections"],
-  },
-  {
-    title: "Instrumental Collaboration",
-    items: ["Sonatas", "Concerto reductions", "Audition repertoire"],
-  },
-  {
-    title: "Chamber Music",
-    items: ["Duo repertoire", "Small ensembles", "Contemporary works"],
-  },
 ];
 
 export const mediaItems: MediaItem[] = [

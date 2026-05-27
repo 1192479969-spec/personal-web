@@ -16,8 +16,9 @@ export function BookingGuide() {
         How to Book a Collaboration
       </h2>
       <p className="mt-5 leading-8 text-gallery-soft">
-        To help confirm fit and availability quickly, please include these details
-        in your first email.
+        To help confirm availability and planning, please include any relevant
+        project details in your initial inquiry. If the full scope is still
+        developing, I&apos;m happy to help estimate rehearsal and scheduling needs.
       </p>
 
       <ul className="mt-8 space-y-5">
@@ -26,7 +27,11 @@ export function BookingGuide() {
             <CheckCircle2 className="mt-1 shrink-0 text-accent" size={20} aria-hidden="true" />
             <div>
               <h3 className="font-serif text-xl text-gallery-black">{item.title}</h3>
-              <p className="mt-2 leading-7 text-gallery-soft">{item.description}</p>
+              {item.description.map((description) => (
+                <p key={description} className="mt-2 leading-7 text-gallery-soft">
+                  {description}
+                </p>
+              ))}
             </div>
           </li>
         ))}

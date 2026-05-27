@@ -9,7 +9,7 @@ export type BookingGuideItem = {
   description: string;
 };
 
-export const professionalEmail = "hello@example.com";
+export const professionalEmail = "starrchenpiano@gmail.com";
 
 export const contactIntro = {
   eyebrow: "Contact",

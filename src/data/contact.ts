@@ -6,7 +6,7 @@ export type ContactMethod = {
 
 export type BookingGuideItem = {
   title: string;
-  description: string;
+  description: string[];
 };
 
 export const professionalEmail = "starrchenpiano@gmail.com";
@@ -33,20 +33,30 @@ export const contactMethods: ContactMethod[] = [
 
 export const bookingGuideItems: BookingGuideItem[] = [
   {
-    title: "Date and Time",
-    description: "Include the performance date, rehearsal dates, call times, and time zone.",
+    title: "Date & Timing",
+    description: [
+      "Performance date, rehearsal dates, call times, and time zone (if applicable).",
+    ],
   },
   {
     title: "Venue / Location",
-    description: "Share the venue name, city, address, and whether travel is required.",
+    description: [
+      "Venue name, city, address, and whether travel is involved.",
+      "Projects involving significant travel, parking, tolls, or extended transit time may require additional travel compensation.",
+    ],
   },
   {
-    title: "Repertoire / Program details",
-    description: "List works, composers, movements, cuts, keys, and available scores.",
+    title: "Repertoire / Program Details",
+    description: [
+      "Works, composers, movements, cuts, keys, instrumentation, and available scores or recordings.",
+    ],
   },
   {
-    title: "Budget / Fee expectations",
-    description: "Include your budget range, payment timeline, and any institutional fee rules.",
+    title: "Budget / Fee Expectations",
+    description: [
+      "If available, please include your anticipated budget or institutional payment policies.",
+      "Fees are generally based on rehearsal time, performance duration, preparation requirements, and travel. Performance calls typically include pre-performance call time in addition to the recital itself.",
+    ],
   },
 ];
 
@@ -57,10 +67,10 @@ export function createMailtoHref() {
     "",
     "I would like to inquire about a collaboration.",
     "",
-    "Date and Time:",
+    "Date & Timing:",
     "Venue / Location:",
-    "Repertoire / Program details:",
-    "Budget / Fee expectations:",
+    "Repertoire / Program Details:",
+    "Budget / Fee Expectations:",
     "",
     "Thank you.",
   ].join("\n");

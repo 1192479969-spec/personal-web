@@ -24,6 +24,7 @@ export function ContactCard() {
 
       <a
         href={createMailtoHref()}
+        aria-label={`Email ${professionalEmail} with collaboration inquiry details`}
         className="mt-8 inline-flex items-center justify-center gap-3 rounded-full bg-gallery-black px-6 py-4 text-sm uppercase tracking-gallery text-gallery-white transition hover:bg-accent focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-4 focus:ring-offset-gallery-white"
       >
         Email {professionalEmail}
@@ -38,6 +39,7 @@ export function ContactCard() {
             <a
               key={method.label}
               href={method.href}
+              aria-label={`${method.label}: ${method.value}`}
               className="flex gap-4 border-t border-gallery-line pt-6 transition hover:text-accent"
             >
               <span className="mt-1 text-accent">

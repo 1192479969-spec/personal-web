@@ -42,7 +42,12 @@ export function Footer() {
           <h2 className="text-xs uppercase tracking-gallery text-accent">Contact</h2>
           <div className="mt-4 flex flex-col gap-3">
             {contactMethods.map((method) => (
-              <a key={method.label} href={method.href} className={contactLinkClass(method.label)}>
+              <a
+                key={method.label}
+                href={method.href}
+                aria-label={`${method.label}: ${method.value}`}
+                className={contactLinkClass(method.label)}
+              >
                 {method.value}
               </a>
             ))}

@@ -14,7 +14,7 @@ export function Hero() {
       <div className="absolute inset-x-8 bottom-24 h-px bg-gallery-white/10" aria-hidden="true" />
 
       <div className="relative z-10 mx-auto max-w-5xl">
-        <p className="text-xs uppercase tracking-gallery text-accent-soft">
+        <p className="mx-auto max-w-xs text-xs uppercase leading-6 tracking-[0.12em] text-accent-soft sm:max-w-none sm:tracking-gallery">
           {heroContent.eyebrow}
         </p>
         <h1 className="mt-8 font-serif text-5xl leading-tight text-gallery-white md:text-7xl lg:text-8xl">

@@ -16,20 +16,20 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-gallery-line/70 bg-gallery-white/90 backdrop-blur">
       <nav
-        className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10"
+        className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-5 sm:px-6 lg:px-10"
         aria-label="Primary navigation"
       >
         <Link
           href="/"
-          className="flex items-center gap-3"
+          className="flex min-w-0 items-center gap-3"
           aria-label={`${siteIdentity.name} home`}
           onClick={closeMenu}
         >
           <span className="flex size-10 items-center justify-center rounded-full border border-accent/40 text-accent">
             <Music2 size={18} aria-hidden="true" />
           </span>
-          <span>
-            <span className="block font-serif text-xl font-semibold leading-none text-gallery-black">
+          <span className="min-w-0">
+            <span className="block truncate font-serif text-lg font-semibold leading-none text-gallery-black sm:text-xl">
               {siteIdentity.name}
             </span>
             <span className="mt-1.5 block text-[0.65rem] uppercase tracking-gallery text-gallery-soft">
@@ -71,7 +71,7 @@ export function Navbar() {
       {isOpen ? (
         <div
           id="mobile-navigation"
-          className="border-t border-gallery-line bg-gallery-white px-6 py-6 shadow-sm md:hidden"
+          className="border-t border-gallery-line bg-gallery-white px-6 py-5 shadow-sm md:hidden"
         >
           <div className="flex flex-col gap-5">
             {navigationLinks.map((link) => {
@@ -81,7 +81,7 @@ export function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`text-sm uppercase tracking-gallery transition hover:text-accent ${
+                  className={`block py-2 text-sm uppercase tracking-gallery transition hover:text-accent ${
                     isActive ? "text-accent" : "text-gallery-charcoal"
                   }`}
                   onClick={closeMenu}

@@ -12,6 +12,8 @@ Place files in the following locations:
 ├── index.html
 ├── package.json
 ├── postcss.config.mjs
+├── public
+│   └── _redirects
 ├── tailwind.config.js
 ├── tsconfig.json
 ├── vite.config.ts
@@ -32,13 +34,13 @@ Place files in the following locations:
     │   └── layout
     │       ├── Footer.tsx
     │       └── Navbar.tsx
-    └── data
-        ├── about.ts
-        ├── contact.ts
-        ├── home.ts
-        ├── media.ts
-        ├── repertoire.json
-        └── site.ts
+    ├── data
+    │   ├── about.ts
+    │   ├── contact.ts
+    │   ├── home.ts
+    │   ├── media.ts
+    │   ├── repertoire.json
+    │   └── site.ts
     └── pages
         ├── AboutPage.tsx
         ├── ContactPage.tsx
@@ -56,6 +58,8 @@ Place files in the following locations:
 - `src/app/globals.css` imports Tailwind and applies the base typography,
   selection color, and global page background.
 - `tsconfig.json` enables strict TypeScript and the `@/*` import alias.
+- `public/_redirects` lets Cloudflare Pages serve `index.html` for client-side
+  routes such as `/about`.
 
 ## Step 3: Routes
 

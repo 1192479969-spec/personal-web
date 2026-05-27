@@ -4,7 +4,8 @@ export type NavigationLink = {
 };
 
 export const siteIdentity = {
-  name: "Collaborative Pianist",
+  name: "Yuanxin Starr Chen",
+  descriptor: "Collaborative Pianist",
   business: "SMLLC",
   tagline: "Elegant piano partnership for recitals, auditions, and chamber music.",
 };

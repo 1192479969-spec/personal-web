@@ -29,11 +29,11 @@ export function Navbar() {
             <Music2 size={18} aria-hidden="true" />
           </span>
           <span>
-            <span className="block font-serif text-lg leading-none text-gallery-black">
+            <span className="block font-serif text-xl font-semibold leading-none text-gallery-black">
               {siteIdentity.name}
             </span>
-            <span className="mt-1 block text-[0.65rem] uppercase tracking-gallery text-gallery-soft">
-              {siteIdentity.business}
+            <span className="mt-1.5 block text-[0.65rem] uppercase tracking-gallery text-gallery-soft">
+              {siteIdentity.descriptor}
             </span>
           </span>
         </Link>

@@ -24,6 +24,7 @@ Place files in the following locations:
     │   ├── layout.tsx
     │   └── page.tsx
     ├── components
+    │   ├── AboutPreview.tsx
     │   ├── AboutSection.tsx
     │   ├── BookingGuide.tsx
     │   ├── ContactCard.tsx
@@ -66,8 +67,8 @@ The App Router pages are:
 ## Step 4: Component and data separation
 
 - Shared layout components live in `src/components/layout`.
-- Home page sections live in `src/components/Hero.tsx` and
-  `src/components/ServicesOverview.tsx`.
+- Home page sections live in `src/components/Hero.tsx`,
+  `src/components/AboutPreview.tsx`, and `src/components/ServicesOverview.tsx`.
 - About page sections live in `src/components/AboutSection.tsx`, with copy in
   `src/data/about.ts`.
 - Repertoire display lives in `src/components/RepertoireList.tsx`, with

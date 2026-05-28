@@ -18,7 +18,7 @@ export const aboutPreview = {
   eyebrow: "About",
   title: "The Road to Musical Partnership.",
   body:
-    "A collaborative pianist active in the Bay Area. Whether it's a last-minute rehearsal or a high-stakes performance, I bring adaptability, precision, and a partner’s intuition to every project. ",
+    "A collaborative pianist active in the Bay Area, I enjoy working with musicians across a wide range of repertoire and performance settings. From last-minute rehearsals to formal performances, my goal is to provide a high-quality piano collaboration while making the rehearsal and performance process supportive, enjoyable, and musically rewarding. ",
   ctaLabel: "Read Full Biography",
   ctaHref: "/about",
 };

@@ -35,7 +35,7 @@ export const bookingGuideItems: BookingGuideItem[] = [
   {
     title: "Date & Timing",
     description: [
-      "Performance date, rehearsal dates, call times, and time zone (if applicable).",
+      "Performance date, rehearsal dates, call times (if applicable).",
     ],
   },
   {
@@ -61,14 +61,12 @@ export const bookingGuideItems: BookingGuideItem[] = [
 ];
 
 export function createMailtoHref() {
-  const subject = "Collaboration Inquiry";
+  const subject = "Collaboration/Gig: ";
   const body = [
-    "Hello,",
+    "Hi Starr,",
     "",
-    "I would like to inquire about a collaboration.",
+    "I'm looking for a pianist/an accompanist for [Event name] on [Date & Time] at [Location].",
     "",
-    "Date & Timing:",
-    "Venue / Location:",
     "Repertoire / Program Details:",
     "Budget / Fee Expectations:",
     "",

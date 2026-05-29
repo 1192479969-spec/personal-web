@@ -5,11 +5,6 @@ export type MediaVideo = {
   embedUrl: string;
 };
 
-export const mediaIntro = {
-  eyebrow: "Media",
-  heading: "Performance Gallery",
-  description:"Selected recordings and performance highlights"}
-
 export const mediaVideos: MediaVideo[] = [
   {
     title: "Rachmaninoff: Cello Sonata, Op.19",

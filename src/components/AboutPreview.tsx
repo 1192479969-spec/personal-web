@@ -2,6 +2,7 @@ import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 import { aboutPreview } from "@/data/home";
+import proImage from '../assets/x.jpg'
 
 export function AboutPreview() {
   return (

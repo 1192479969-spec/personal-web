@@ -11,6 +11,8 @@ export type BookingGuideItem = {
 
 export const professionalEmail = "starrchenpiano@gmail.com";
 
+export const location = "Based on the Peninsula, Available for local and travel engagements";
+
 export const contactIntro = {
   eyebrow: "Contact",
   heading: "Start a focused conversation about your next collaboration.",
@@ -26,7 +28,7 @@ export const contactMethods: ContactMethod[] = [
   },
   {
     label: "Location",
-    value: "Available for local and travel engagements",
+    value: location,
     href: "/contact",
   },
 ];
